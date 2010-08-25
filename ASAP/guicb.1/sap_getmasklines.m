@@ -1,0 +1,24 @@
+function lines = sap_getmasklines(mask,multf);
+lines = {};
+mask2 = bwfill(mask,'holes');
+[mask2,numlabels] = bwlabel(xor(mask2,mask),4);
+ct = 0;
+h = hist(double(mask2(find(mask2(:)))),numlabels);
+[val,sorted_labels] = sort(h);
+idx = find(val>=40);
+val = val(idx);
+sorted_labels = sorted_labels(idx);
+sorted_labels = flipud(sorted_labels(:))';
+for j=sorted_labels,
+    mask3 = (mask2 == j);
+    ct = ct+1;
+    mask3 = double(bwmorph(mask3,'dilate',1));
+    %        imagesc(mask3);
+    %mask3 = double(dilate(mask3,ones(3)));
+    cm = contourc(mask3,[1 1]);
+    lines{ct}.ptlist = [cm(1,2:1+cm(2,1))' cm(2,2:1+cm(2,1))']/multf;
+    lines{ct}.label = 'None';
+    %[c,hdl] = contour(mask3,[1 1],'r-');
+    %regdata(i).lines{j}.ptlist = [get(hdl,'XData')' get(hdl,'YData')'];
+    %delete(hdl);
+end;

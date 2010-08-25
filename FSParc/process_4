@@ -1,0 +1,20 @@
+
+foreach sub_dir (sub06)
+
+        echo Processing $sub_dir.fs
+        echo RUNNING MRI_CONVERT on $sub_dir.fs
+        mri_convert -it spm -ot cor $sub_dir/corr_*.img $sub_dir.fs/mri/orig/
+        echo RUNNING SEGMENT_SUBJECT on $sub_dir.fs --> SEGMENTS SUBJ
+        segment_subject $sub_dir.fs
+        echo RUNNING INFLATE_SUBJECT on $sub_dir.fs --> CREATES SURFACE
+	inflate_subject $sub_dir.fs
+	
+	# Here is where you do the manual edits, rerun INFLATE_SUBJECT and
+	# then the following commands.
+	
+	#fix_subject $sub_dir.fs
+        #morph_subject $sub_dir.fs
+        #make_final_surfaces_subject $sub_dir.fs
+
+end
+

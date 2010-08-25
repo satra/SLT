@@ -1,0 +1,11 @@
+#!/bin/csh
+
+foreach SUBJ ($*)
+    set subjdir = ralasubj.$SUBJ
+    mkdir $subjdir/mri/parc1
+    mkdir $subjdir/label
+    mri_convert -it spm -ot cor -ns 1 ROI/ewROImask_mwSubject.$SUBJ.Series.0*.img $subjdir/mri/parc1
+    foreach hemi (lh rh)
+       mris_sample_parc $subjdir $hemi parc1 parc
+    end
+end

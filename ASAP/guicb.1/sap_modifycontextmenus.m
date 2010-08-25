@@ -1,0 +1,56 @@
+function sap_modifycontextmenus(handles)
+
+%modify sulci context menu
+load('sap_collist.spt','-MAT');
+[sulcilist,id] = sap_sulcilist;
+for i=1:length(sulcilist),
+    str = sprintf('sap_clientmanager(''sap_sulcicb'',gcbo,[],guihandles(gcbf),''selectsulci'',%d)',id(i));
+    udata.col = collist(i,:);
+    uimenu('Parent',handles.sap_sulcselect,...
+        'Label',sulcilist{i},...
+        'ForegroundColor',udata.col,...
+        'Callback',str,...
+        'userdata',udata);
+end;
+
+% modify node menu
+nodes = sap_nodelist;
+for i=1:length(nodes),
+    uimenu('Parent',handles.sap_sulcnode,...
+        'Label',nodes(i).sername,...
+        'Enable','off','Separator','on');
+    uimenu('Parent',handles.sap_parcnode,...
+        'Label',nodes(i).sername,...
+        'Enable','off','Separator','on');
+    uimenu('Parent',handles.sap_labelnode,...
+        'Label',nodes(i).sername,...
+        'Enable','off','Separator','on');
+    for j=nodes(i).did(:)',
+        str = sprintf('sap_clientmanager(''sap_sulcicb'',gcbo,[],guihandles(gcbf),''setnode'',%d,%d)',nodes(i).sid,nodes(i).id(j));
+        uh = uimenu('Parent',handles.sap_sulcnode,...
+            'Label',[nodes(i).names{j} ':L[]R[]'],...
+            'Callback',str);        
+        uhl = uimenu('Parent',handles.sap_labelnode,...
+            'Label',[nodes(i).names{j} ':L[]R[]']);
+        uhp = uimenu('Parent',handles.sap_parcnode,...
+            'Label',[nodes(i).names{j} ':L[]R[]']);
+        if j ==1,
+            set([uh,uhl,uhp],'Separator','on');
+        end;
+        nodehdl{nodes(i).sid}{nodes(i).id(j)} = [uh,uhl,uhp];
+    end;
+end;
+setappdata(handles.sap_mainfrm,'nodehdl',nodehdl);
+
+% modify label context menu
+[labels,id] = sap_PUlist;
+for i=1:length(labels),
+    str = sprintf('sap_clientmanager(''sap_labelcb'',gcbo,[],guihandles(gcbf),''setlabel'',%d,''%s'')',id(i),labels{i});
+    udata.col = rand(1,3);
+    udata.id = id(i);
+    labelhdl(i) = uimenu('Parent',handles.sap_labelselect,...
+        'Label',labels{i},...
+        'Callback',str,...
+        'userdata',udata);
+end;
+setappdata(handles.sap_mainfrm,'labelhdl',labelhdl);

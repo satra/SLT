@@ -1,0 +1,47 @@
+vtkAutomex v0.3 [http://www.cns.bu.edu/~speech/VTK.php]
+
+[Changes are listed at the bottom of this document]
+
+vtkAutomex is a simple set of functions writted primarily to automate building C++ mex VTK pipelines that can be used from within Matlab. It has been very helpful for harnessing the power of VTK within Matlab. This is a starting point for creating a better VTK pipeline generator. 
+
+Limitations: This is a version primarily created to aid our lab research and therefore does not contain the full functionality that somebody else may require. Currently it can take in volumes and triangular meshes as input and generate triangular meshes as output. So any pipeline that can work with these I/O limitations should work. However, it should be fairly easy to plug in other I/O types.
+
+Run vtkmex_demo.m for a demo. In the demo four different pipelines are created and one of them is used for getting the isosurface of a volume and then rendering the volume using VTK's openGL renderer. For polydata output, this is done by setting render_output to 1. While the openGL renderer can be used from within vtkIsoSurface itself, the demo shows how it used as a standalone OpenGL viewer. To quit the interactive viewer press q. The viewer takes standard OpenGLviewer commands.
+
+The basic structure of the pipeline can be seen in vtkstruct_demo03.m. If you want to parameterize the different function calls, create a field called param for the corresponding function entry. If you want to parameterize every single parameter then create a field called parameterize and set it to 1 at the top level (see vtkstruct_demo02.m).
+
+To compile these files you need to modify the mexopts.sh/mexopts.bat file in the Matlab preference folder: 
+
+For UNIX this involves something like the following:
+
+under glnx86) option
+VTKLIBS="-L /home/software/VTK/lib/ -lvtkCommon -lvtkFiltering -lvtkGraphics -lvtkImaging -lvtkIO -lvtkPatented -lvtkRendering -lsvml"
+CFLAGS='... -I /home/software/VTK/include/'
+CLIBS="... $VTKLIBS"
+
+For Windows it involves:
+
+set INCLUDE=...;d:\others\vtk\include
+set LIB=...;d:\others\vtk\lib
+...
+set LINKFLAGS=... libmat.lib vtkGraphics.lib vtkRendering.lib vtkjpeg.lib vtkIO.lib vtkexpat.lib  vtkpng.lib vtkCommon.lib vtkImaging.lib vtkfreetype.lib vtktiff.lib vtkFiltering.lib  vtkPatented.lib vtkftgl.lib vtkzlib.lib /implib:%LIB_NAME%.x
+
+Requirements:
+Matlab (www.mathworks.com)
+VTK (public.kitware.com)
+
+Assumes:
+You have a working VTK build on ths system. By working, you should have a folder containing all the VTK headers (*.h and vtkConfigure.h from the build directory in case you are extracting these files from the VTK src tree), a folder containing all the libraries (*.lib) and a folder containing all the "binaries" (*.so or *.dll depending on your platform).
+
+Cheers,
+
+Satrajit Ghosh
+Department of Cognitive and Neural Systems, Boston University
+http://www.cns.bu.edu/~speech/software.php
+
+
+[Changes in version 0.3]
+- Added an OpenGL demo (vtkstruct_demo04) and related changes
+
+[Changes in version 0.2 since release]
+- Rendering polygonal meshes as an option

@@ -1,0 +1,3 @@
+#!/bin/tcsh -ef
+
+mri_convert -it spm -ot mgz $1 $2/mri/orig/001.mgz

@@ -1,0 +1,2 @@
+FreeSurfer processing has started. Once preprocessing is done you will receive a mail.
+

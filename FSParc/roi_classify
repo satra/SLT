@@ -1,0 +1,17 @@
+#!/bin/csh
+set bin=mris_ca_label
+
+set table = $FREESURFER_HOME/ASAP_labels.txt
+#set table = $FREESURFER_HOME/Simple_surface_labels2005.txt
+# -t $table
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/average/${hemi}.SpeechLabAtlas03_64.gcs
+	$bin -t $table $SUBJ $hemi sphere.reg $atlas ${hemi}-aparc.annot
+#	set atlas=$SUBJECTS_DIR/average/${hemi}.atlas2005_simple.gcs
+#	$bin -t $table $SUBJ $hemi sphere.reg $atlas ${hemi}.parc05.annot
+    end
+end
+
+ 

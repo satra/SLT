@@ -1,0 +1,8 @@
+#!/bin/csh
+set bin=mris_ca_train
+foreach hemi (rh lh)
+    set echo=1
+    $bin -n 2 $hemi sphere.reg parc-MCedit.annot $* $SUBJECTS_DIR/average/{$hemi}.SpeechLabAtlas03_64.gcs
+#    $bin -n 2 $hemi sphere.reg parctrain01.annot $* $SUBJECTS_DIR/average/{$hemi}.SpeechLabAtlas02.gcs
+end
+

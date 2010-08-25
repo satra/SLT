@@ -1,0 +1,74 @@
+#!/bin/csh
+set bin=mris_ca_label
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less1/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless1.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less2/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless2.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less3/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless3.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less4/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless4.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less5/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless5.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less7/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless7.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less8/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless8.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less9/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless9.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/less10/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcless10.annot
+    end
+end
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/averages/all/${hemi}_SpeechLabAtlas01.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-aparcall.annot
+    end
+end
+
+

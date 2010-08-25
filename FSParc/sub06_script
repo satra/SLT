@@ -1,0 +1,17 @@
+#!/bin/tcsh -ef
+
+#mail -s "[FreeSurfer]:Starting Preprocess" -c mshiffer@cns.bu.edu satra@cns.bu.edu < emailstart.txt
+
+foreach sub_dir (sub06)
+	#echo $sub_dir
+	#mkdir $sub_dir.fs
+	#echo RUNNING MRI_CONVERT
+	mri_convert -it spm -ot cor $sub_dir/corr_*.img $sub_dir.fs/mri/orig/
+	#echo RUNNING SEGMENT_SUBJECT --> SEGMENTS AND INFLATES
+	segment_subject $sub_dir.fs
+	#fix_subject $sub_dir.fs
+	#morph_subject $sub_dir.fs
+	#make_final_surfaces_subject $sub_dir.fs
+end
+
+#mail -s "[FreeSurfer]:Done Preprocess" -c mshiffer@cns.bu.edu satra@cns.bu.edu < emailend.txt

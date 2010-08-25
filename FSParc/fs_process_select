@@ -1,0 +1,17 @@
+#!/bin/tcsh -ef
+
+mail -s "[FreeSurfer]:Starting Postprocess" -c mshiffer@cns.bu.edu -c jtour@cns.bu.edu satra@cns.bu.edu < emailstart.txt
+
+foreach SUBJ (sub04.fs )
+	echo INFLATING SUBJECT $SUBJ
+	inflate_subject $SUBJ
+	echo FIXING SUBJECT $SUBJ
+	fix_subject $SUBJ
+	echo MORPHING SUBJECT $SUBJ
+	morph_subject-lh $SUBJ
+	morph_subject-rh $SUBJ
+	echo MAKING FINAL SUEFACE $SUBJ
+	make_final_surfaces_subject $SUBJ
+end
+
+mail -s "[FreeSurfer]:Done Postprocess" -c mshiffer@cns.bu.edu -c jtour@cns.bu.edu satra@cns.bu.edu < emailend.txt

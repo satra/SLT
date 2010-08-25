@@ -1,0 +1,3 @@
+#!/bin/tcsh -ef
+
+cp -r SUBJDIRTEMPLATE $1

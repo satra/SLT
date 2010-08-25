@@ -1,0 +1,29 @@
+Name,ID,DisplayID
+aar_syl      ,1,1
+ahr_syl      ,2,2
+angular      ,3,3
+calcarine    ,4,4
+central      ,5,5
+cent_insula  ,6,6
+cingulate    ,7,7
+circular     ,8,8
+collateral   ,9,9
+cuneal       ,10,10
+first_trans  ,11,11
+Heschls      ,12,12
+inf_frontal  ,13,13
+inf_temporal ,14,14
+intraparietal,15,15
+Jensens      ,16,16
+lat_occipital,17,17
+occ_temporal ,18,18
+olfactory    ,19,19
+par_occipital,20,20
+par_syl      ,21,21
+paracingulate,22,22
+phr_syl      ,23,23
+post_central ,24,24
+precentral   ,25,25
+subparietal  ,26,26
+sup_frontal  ,27,27
+sup_temporal ,28,28

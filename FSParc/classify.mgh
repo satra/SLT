@@ -1,0 +1,11 @@
+#!/bin/csh
+set bin=mris_ca_label
+
+foreach SUBJ ($*)
+    foreach hemi (lh rh)
+	set atlas=$SUBJECTS_DIR/average/${hemi}.atlas2002_simple.gcs
+	$bin $SUBJ $hemi sphere.reg $atlas ${hemi}-mghaparc.annot
+    end
+end
+
+

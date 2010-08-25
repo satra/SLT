@@ -1,0 +1,195 @@
+[Sensor Sensitivity]
+   Channel no.        Type                  Gain         Offset
+                                          [pT/Volt]      [Volt]
+        0        AxialGradioMeter          531.543      0.000000
+        1        AxialGradioMeter          464.081      0.000000
+        2        AxialGradioMeter          500.238      0.000000
+        3        AxialGradioMeter          501.503      0.000000
+        4        AxialGradioMeter          490.962      0.000000
+        5        AxialGradioMeter          511.985      0.000000
+        6        AxialGradioMeter          510.962      0.000000
+        7        AxialGradioMeter          499.877      0.000000
+        8        AxialGradioMeter          547.712      0.000000
+        9        AxialGradioMeter          494.397      0.000000
+       10        AxialGradioMeter          456.543      0.000000
+       11        AxialGradioMeter          447.229      0.000000
+       12        AxialGradioMeter          454.752      0.000000
+       13        AxialGradioMeter          537.729      0.000000
+       14        AxialGradioMeter          515.321      0.000000
+       15        AxialGradioMeter          466.890      0.000000
+       16        AxialGradioMeter         -504.128      0.000000
+       17        AxialGradioMeter          467.682      0.000000
+       18        AxialGradioMeter          445.611      0.000000
+       19        AxialGradioMeter          484.369      0.000000
+       20        AxialGradioMeter          535.817      0.000000
+       21        AxialGradioMeter          557.500      0.000000
+       22        AxialGradioMeter          560.364      0.000000
+       23        AxialGradioMeter          485.055      0.000000
+       24        AxialGradioMeter          478.535      0.000000
+       25        AxialGradioMeter          474.640      0.000000
+       26        AxialGradioMeter          492.329      0.000000
+       27        AxialGradioMeter          551.961      0.000000
+       28        AxialGradioMeter          460.133      0.000000
+       29        AxialGradioMeter          488.048      0.000000
+       30        AxialGradioMeter          535.273      0.000000
+       31        AxialGradioMeter          538.861      0.000000
+       32        AxialGradioMeter          555.378      0.000000
+       33        AxialGradioMeter          488.582      0.000000
+       34        AxialGradioMeter          499.838      0.000000
+       35        AxialGradioMeter          504.162      0.000000
+       36        AxialGradioMeter          540.254      0.000000
+       37        AxialGradioMeter          486.790      0.000000
+       38        AxialGradioMeter          496.485      0.000000
+       39        AxialGradioMeter          516.815      0.000000
+       40        AxialGradioMeter         -499.489      0.000000
+       41        AxialGradioMeter         -486.918      0.000000
+       42        AxialGradioMeter          537.942      0.000000
+       43        AxialGradioMeter          562.576      0.000000
+       44        AxialGradioMeter          526.218      0.000000
+       45        AxialGradioMeter          525.150      0.000000
+       46        AxialGradioMeter          535.585      0.000000
+       47        AxialGradioMeter          525.911      0.000000
+       48        AxialGradioMeter          534.786      0.000000
+       49        AxialGradioMeter         -474.032      0.000000
+       50        AxialGradioMeter          501.808      0.000000
+       51        AxialGradioMeter          538.915      0.000000
+       52        AxialGradioMeter          509.254      0.000000
+       53        AxialGradioMeter          534.512      0.000000
+       54        AxialGradioMeter          527.808      0.000000
+       55        AxialGradioMeter         1019.788      0.000000
+       56        AxialGradioMeter          521.761      0.000000
+       57        AxialGradioMeter          519.517      0.000000
+       58        AxialGradioMeter          531.429      0.000000
+       59        AxialGradioMeter          504.243      0.000000
+       60        AxialGradioMeter          526.206      0.000000
+       61        AxialGradioMeter          502.451      0.000000
+       62        AxialGradioMeter          502.467      0.000000
+       63        AxialGradioMeter          498.443      0.000000
+       64        AxialGradioMeter          476.710      0.000000
+       65        AxialGradioMeter          516.794      0.000000
+       66        AxialGradioMeter          563.601      0.000000
+       67        AxialGradioMeter          567.415      0.000000
+       68        AxialGradioMeter          507.586      0.000000
+       69        AxialGradioMeter          500.274      0.000000
+       70        AxialGradioMeter          534.457      0.000000
+       71        AxialGradioMeter          512.139      0.000000
+       72        AxialGradioMeter          495.696      0.000000
+       73        AxialGradioMeter          487.761      0.000000
+       74        AxialGradioMeter          505.075      0.000000
+       75        AxialGradioMeter          523.732      0.000000
+       76        AxialGradioMeter          517.051      0.000000
+       77        AxialGradioMeter          525.681      0.000000
+       78        AxialGradioMeter          515.911      0.000000
+       79        AxialGradioMeter         1040.598      0.000000
+       80        AxialGradioMeter          512.432      0.000000
+       81        AxialGradioMeter          530.808      0.000000
+       82        AxialGradioMeter          514.507      0.000000
+       83        AxialGradioMeter         1143.473      0.000000
+       84        AxialGradioMeter          501.823      0.000000
+       85        AxialGradioMeter          545.593      0.000000
+       86        AxialGradioMeter          563.678      0.000000
+       87        AxialGradioMeter          563.822      0.000000
+       88        AxialGradioMeter          542.923      0.000000
+       89        AxialGradioMeter          473.591      0.000000
+       90        AxialGradioMeter          496.727      0.000000
+       91        AxialGradioMeter          490.588      0.000000
+       92        AxialGradioMeter          492.237      0.000000
+       93        AxialGradioMeter          475.855      0.000000
+       94        AxialGradioMeter          496.705      0.000000
+       95        AxialGradioMeter          520.805      0.000000
+       96        AxialGradioMeter          543.417      0.000000
+       97        AxialGradioMeter          543.190      0.000000
+       98        AxialGradioMeter          503.554      0.000000
+       99        AxialGradioMeter          548.024      0.000000
+      100        AxialGradioMeter          508.739      0.000000
+      101        AxialGradioMeter          542.451      0.000000
+      102        AxialGradioMeter          511.028      0.000000
+      103        AxialGradioMeter          494.528      0.000000
+      104        AxialGradioMeter          493.331      0.000000
+      105        AxialGradioMeter          522.242      0.000000
+      106        AxialGradioMeter          544.226      0.000000
+      107        AxialGradioMeter          539.700      0.000000
+      108        AxialGradioMeter          530.439      0.000000
+      109        AxialGradioMeter          509.598      0.000000
+      110        AxialGradioMeter          541.465      0.000000
+      111        AxialGradioMeter          555.588      0.000000
+      112        AxialGradioMeter         -504.282      0.000000
+      113        AxialGradioMeter          555.138      0.000000
+      114        AxialGradioMeter          467.858      0.000000
+      115        AxialGradioMeter          522.446      0.000000
+      116        AxialGradioMeter          493.520      0.000000
+      117        AxialGradioMeter          518.147      0.000000
+      118        AxialGradioMeter          540.617      0.000000
+      119        AxialGradioMeter          547.966      0.000000
+      120        AxialGradioMeter          515.862      0.000000
+      121        AxialGradioMeter          509.676      0.000000
+      122        AxialGradioMeter          484.282      0.000000
+      123        AxialGradioMeter          533.143      0.000000
+      124        AxialGradioMeter          538.636      0.000000
+      125        AxialGradioMeter          527.981      0.000000
+      126        AxialGradioMeter          499.426      0.000000
+      127        AxialGradioMeter          532.144      0.000000
+      128        AxialGradioMeter          505.196      0.000000
+      129        AxialGradioMeter          538.688      0.000000
+      130        AxialGradioMeter          564.464      0.000000
+      131        AxialGradioMeter          512.576      0.000000
+      132        AxialGradioMeter          531.856      0.000000
+      133        AxialGradioMeter          509.146      0.000000
+      134        AxialGradioMeter          535.137      0.000000
+      135        AxialGradioMeter          557.665      0.000000
+      136        AxialGradioMeter          522.595      0.000000
+      137        AxialGradioMeter         1079.524      0.000000
+      138        AxialGradioMeter         -503.875      0.000000
+      139        AxialGradioMeter          509.312      0.000000
+      140        AxialGradioMeter          545.136      0.000000
+      141        AxialGradioMeter          512.754      0.000000
+      142        AxialGradioMeter          525.204      0.000000
+      143        AxialGradioMeter          541.350      0.000000
+      144        AxialGradioMeter          545.588      0.000000
+      145        AxialGradioMeter          513.153      0.000000
+      146        AxialGradioMeter          522.577      0.000000
+      147        AxialGradioMeter         1133.405      0.000000
+      148        AxialGradioMeter          562.346      0.000000
+      149        AxialGradioMeter          517.928      0.000000
+      150        AxialGradioMeter          552.099      0.000000
+      151        AxialGradioMeter          543.258      0.000000
+      152        AxialGradioMeter          532.601      0.000000
+      153        AxialGradioMeter          519.542      0.000000
+      154        AxialGradioMeter          559.254      0.000000
+      155        AxialGradioMeter          569.810      0.000000
+      156        AxialGradioMeter          534.305      0.000000
+      157        RefMagnetoMeter         50000.000      0.000000
+      158        RefMagnetoMeter         50000.000      0.000000
+      159        RefMagnetoMeter         50000.000      0.000000
+      160        Trigger Channel           535.074      0.000000
+      161        Trigger Channel           535.074      0.000000
+      162        Trigger Channel           535.074      0.000000
+      163        Trigger Channel           535.074      0.000000
+      164        Trigger Channel           535.074      0.000000
+      165        Trigger Channel           535.074      0.000000
+      166        Trigger Channel           535.074      0.000000
+      167        Trigger Channel           535.074      0.000000
+      168        Null Channel              535.074      0.000000
+      169        Null Channel              535.074      0.000000
+      170        Null Channel              535.074      0.000000
+      171        Null Channel              535.074      0.000000
+      172        Null Channel              535.074      0.000000
+      173        Null Channel              535.074      0.000000
+      174        Null Channel              535.074      0.000000
+      175        Null Channel              535.074      0.000000
+      176        Null Channel              535.074      0.000000
+      177        Null Channel              535.074      0.000000
+      178        Null Channel              535.074      0.000000
+      179        Null Channel              535.074      0.000000
+      180        Null Channel              535.074      0.000000
+      181        Null Channel              535.074      0.000000
+      182        Null Channel              535.074      0.000000
+      183        Null Channel              535.074      0.000000
+      184        Null Channel              535.074      0.000000
+      185        Null Channel              535.074      0.000000
+      186        Null Channel              535.074      0.000000
+      187        Null Channel              535.074      0.000000
+      188        Null Channel              535.074      0.000000
+      189        Null Channel              535.074      0.000000
+      190        Null Channel              535.074      0.000000
+      191        Null Channel              535.074      0.000000

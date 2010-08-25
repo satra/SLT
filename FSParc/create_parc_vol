@@ -1,0 +1,9 @@
+#!/bin/csh
+
+foreach SUBJ ($*)
+    set subjdir = fsparc.$SUBJ
+    mri_convert -it spm -ot mgz -c -ns 1 -cs 1 ROImasks.fsparc/ew*ubject.$SUBJ.Series.0*.img $subjdir/mri/parctrain01.mgz
+    foreach hemi (lh rh)
+       mris_sample_parc $subjdir $hemi parctrain01.mgz parctrain01
+    end
+end
